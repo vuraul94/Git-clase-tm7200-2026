@@ -1,33 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 </head>
+<style>
+  .title {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 30px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+  }
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  thead {
+    background: #1e293b;
+    color: #fff;
+  }
+
+  thead th {
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s ease;
+  }
+
+  tbody tr:hover {
+    background: #f1f5f9;
+  }
+
+  tbody td {
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #334155;
+  }
+
+  tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  tbody tr:nth-child(even) {
+    background: #f9fafb;
+  }
+
+  @media (max-width: 768px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+
+    thead {
+      display: none;
+    }
+
+    tbody tr {
+      margin-bottom: 15px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    tbody td {
+      padding: 8px 10px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    tbody td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #64748b;
+    }
+
+    tbody td:last-child {
+      border-bottom: none;
+    }
+  }
+</style>
 
 <body>
+  <h1 class="title">Lista de Estudiantes</h1>
+  <div class="container">
     <table border="1">
-        <thead>
-            <th>Carnet</th>
-            <th>Nombre</th>
-            <th>Correo</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-              <tr>
-          <td>C07560</td>
-          <td>Jhon Jairo Solano Carranza</td>
-          <td>jhon.solano@ucr.ac.cr</td>
+      <thead>
+        <th>Carnet</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td>C32897</td>
+          <td>Valeria Fernandez Jimenez</td>
+          <td>valeria.fernandezjimenez@ucr.ac.cr</td>
         </tr>
-        </tbody>
+
+        <tr>
+          <td>B91488</td>
+          <td>Francisco Camareno</td>
+          <td>francisco.camareno@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C17063</td>
+          <td>Luana Salas</td>
+          <td>jluana.salas@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C21802</td>
+          <td>Isaac Castillo</td>
+          <td>joseisaac.castillo@ucr.ac.cr</td>
+        </tr>
+
+        <tr>
+          <td>C34408</td>
+          <td>Kristen Sofia Lopez Vargas</td>
+          <td>kristen.lopez@ucr.ac.cr</td>
+        </tr>
+
+        <tr>
+          <td>B93100</td>
+          <td>Allen Galagarza Bolaños</td>
+          <td>allengb2000@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C38016</td>
+          <td>Jahaziel Valerio González</td>
+          <td>valeriogonzalesjahaziel@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C12643</td>
+          <td>Marco Alonso Elizondo Solis</td>
+          <td>marco.elizondosolis@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C32983</td>
+          <td>Ericka Flores Vargas</td>
+          <td>ericka.floresvargas@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C23861</td>
+          <td>Alejandro Herrera Vallejo</td>
+          <td>alejandro.herreravallejo@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>B37502</td>
+          <td>Raúl Venegas Ugalde</td>
+          <td>raul.venegasugalde@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C38692</td>
+          <td>José Zumbado</td>
+          <td>josezumbado02@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C37490</td>
+          <td>Andrés Sequeira Bogantes</td>
+          <td>andres.sequeirabogantes@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C21282</td>
+          <td>Jason Bonilla Ortiz</td>
+          <td>jasbonor120@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C37444</td>
+          <td>Ebal Seeeeeeemann</td>
+          <td>ebalseemann.cr@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C31975</td>
+          <td>Joshua Cerdas</td>
+          <td>joshua.cerdas@ucr.ac.cr</td>
+        </tr>
+
+        <tr>
+          <td>B97939</td>
+          <td>Alejandro Ulate Valerio</td>
+          <td>alejandro.ulatevalerio@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C38317</td>
+          <td>Ivan Vega Carranza</td>
+          <td>ivan.vegacarranza@ucr.ac.cr</td>
+       
+        <tr>
+          <td>C03864</td>
+          <td>Raul Hidalgo Murillo</td>
+          <td>joseraul.hidalgo@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>C312244</td>
+          <td>Tamara</td>
+          <td>bonillaatami@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C13468</td>
+          <td>Justin Guerrero</td>
+          <td>cocodrilojustin@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C28820</td>
+          <td>Evelyn Barrantes</td>
+          <td>evebadel153@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C34630</td>
+          <td>Ingrid Martínez</td>
+          <td>ingridxiniamartinezmora@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C34119</td>
+          <td>Zoe Marine Kraft</td>
+          <td>zoekraft67@gmail.com</td>
+        </tr>
+        <tr>
+          <td>C10052</td>
+          <td>Alejandro Rodríguez Murcia</td>
+          <td>alejandro.rodriguezmurcia@ucr.ac.cr</td>
+        </tr>
+        <tr>
+          <td>B91608</td>
+          <td>Katherine Carazo Castillo</td>
+          <td>katherine.carazo@ucr.ac.cr</td>
+        </tr>
+       
+      </tbody>
     </table>
-    <iframe src="https://tukishop.vercel.app/" width="600" height="400">
+  </div>
+    <iframe src="https://tukishop.vercel.app/" width="1600" height="800">
     </iframe>
 </body>
 
